@@ -16,6 +16,6 @@ st.dataframe(total_sales_product.head())
 ##st.dataframe(total_sales_product,2)
 total_sales_product['Sales']=round(total_sales_product['Sales'],2)
 total_sales_product=formatIndex(total_sales_product)
-fig=df.bar(total_sales_product,x='Product Name',y='Sales')
+fig=px.bar(total_sales_product,x='Product Name',y='Sales')
 st.plotly_chart(fig,use_container_width=True)
 ##add the format index option
